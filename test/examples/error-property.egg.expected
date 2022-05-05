@@ -1,0 +1,11 @@
+TypeError: Applying not a function or method TypeError: Evaluating properties for Object "[1,2,3]" properties: "["hi"]"
+    at Apply.evaluate (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/ast.js:91:13)
+    at /Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/eggvm.js:60:17
+    at Array.forEach (<anonymous>)
+    at Object.specialForms.do (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/eggvm.js:59:8)
+    at Apply.evaluate (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/ast.js:79:46)
+    at run (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/eggvm.js:297:15)
+    at runFromFile (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/lib/eggvm.js:304:12)
+    at Object.<anonymous> (/Users/casianorodriguezleon/campus-virtual/shared/egg/eloquentjsegg/bin/egg.js:7:67)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)

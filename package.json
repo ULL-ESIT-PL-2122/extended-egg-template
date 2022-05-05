@@ -1,0 +1,57 @@
+{
+  "name": "@ull-esit-pl-2122/eloquentjsegg",
+  "version": "3.0.3",
+  "description": "PL by crguezl. Egg course 21/22",
+  "main": "lib/eggvm.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "./bin/egg.js examples/two.egg",
+    "dtest": "mocha --inspect-brk",
+    "compile": "./bin/eggc.js examples/two.egg && ./bin/evm.js examples/two.egg.evm",
+    "push2019": "git push private-egg-1819 private2019",
+    "push2021": "git push private-egg-2021 private2021",
+    "evm-release": "ncc build bin/evm.js -m -o ../2122-dist-egg/"
+  },
+  "bin": {
+    "egg": "./bin/egg.js",
+    "eggc": "./bin/eggc.js",
+    "evm": "./bin/evm.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PL-2122/private-egg.git"
+  },
+  "keywords": [
+    "ULL",
+    "parsing",
+    "lisp",
+    "PL"
+  ],
+  "author": "Casiano Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-2122/private-egg/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-2122/private-egg#readme",
+  "devDependencies": {
+    "@ull-esit-pl/example2test": "^1.0.23",
+    "chai": "^4.2.0",
+    "gulp-shell": "^0.6.5",
+    "mocha": "^5.2.0",
+    "mocha-sinon": "^2.1.0",
+    "should": "^13.2.3",
+    "sinon": "^7.3.1",
+    "test-console": "^1.1.0"
+  },
+  "dependencies": {
+    "commander": "latest",
+    "node-fetch": "^2.6.0",
+    "shelljs": "^0.8.4",
+    "sync-request": "^6.1.0",
+    "xregexp": "^4.2.4"
+  }
+}
