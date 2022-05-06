@@ -9,7 +9,7 @@ require('mocha-sinon');
 
 const assert = require('assert');
 const {Value, Word, Apply} = require("../lib/ast.js");
-var parser = require('../lib/parse.js');
+var parser = require('@ull-esit-pl-.../lib/');
 var eggvm = require('../lib/eggvm.js');
 
 describe("parse", function() {
@@ -67,7 +67,7 @@ describe("run", function() {
       return args; 
     };
   });
-  
+
   // test code here
   afterEach(function() {
     console.log = originalLog;
